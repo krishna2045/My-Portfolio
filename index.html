@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="assets/logo.jpg" class="logo"> -->
+             <h2><span>G </span>KRISHNA</h2>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer | Python Developer</p>
+            <h1>Hi, I'm <span>G Krishna</span><br>From Hyderabad</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- <img src="assets/about image.jpg"> -->
+                <!-- <img src="assets/about image 3.jpg"> -->
+                <img src="assets/about image (3).jpg" height="400px">
+                <!-- <img src="assets/img3.jpg"> -->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>To work in a challenging environment that facilitates the maximum utilization of my skills and contributes 
+positively to both myself and the organization. 
+        To strive for excellence in competence, delivery, communication,and management. Seeking a challenging career with an organization. 
+To use my interpersonal skills to achieve the company's goals. 
+To be part of a reputed organization that provides 
+opportunities to enhance and utilize my knowledge and skills.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Backend Development</span><br>Using Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mar 2025- Apr 2025 </span><br> Full Stack Web Development Internship(Vidhyanth Ltd.pvt)</li>
+                        <!-- <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2020(SSC)</span><br>Zilla Parsihad High School</li>
+                        <li><span>2021-2022(INTERMEDIATE)</span><br>Telangana Social Welfare Junior College</li>
+                        <li><span>2025-Pursuing(B.Tech)</span><br>Holy Mary Institute of Technology and Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <!-- <i class="fab fa-app-store"></i> -->
+                 <i class="fa-brands fa-python"></i>
+                <h2>Backend Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/Artisan crafts image.avif">
+                <div class="layer">
+                    <h3>Artisan Crafts</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/swiggy clone image.png">
+                <div class="layer">
+                    <h3>Swiggy Clone</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/cookies image.jpg">
+                <div class="layer">
+                    <h3>Cookies </h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>smlkittu@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 7287833136 </p>
+                <div class="social-icons">                   
+                    <a href="https://www.linkedin.com/in/krishna1911?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Krishna2045" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/kanna___19___?igsh=b2s4cm96bXRjOXlu&utm_source=ig_contact_invite"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/11Kittu95607?t=UboFLnw9OJ8dT5B8NEKQ1w&s=09"><i class="fab fa-twitter-square"></i></a>
+
+                </div>
+                <a href="assets/G_Krishna_Resume (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © G Krishna </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxrKxnrbanv-cYuLnL3_ilDKBRO6RucA9kgctPjVRJ_50VIWXfDSSuLMVxOKH67oWDS/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
